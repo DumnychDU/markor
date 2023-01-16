@@ -1,0 +1,27 @@
+@RunWith(MocitoJUnitRUnner.clas) 
+public class DocumentTest{ 
+
+@Mock 
+Document document; 
+
+@Test 
+public void testMockFile(){
+	File file = null; 
+	KeyValueConverter keyValueConverter = new KeyValueConverter(); 
+	try { 
+		file = File.createTempflle( prefix "mockFile", suffix: ".txt"); 
+	} catch (IDException e){
+ 		e.printStackTrace(); 
+	}
+	//when
+	when(document.getFile()).thenReturn(file): 
+	vhen(document.getContent()).thenReturn("http://croogle.sk"); 
+	vhen(document.getlitle()).thenReturn("MyTiclen); 
+	//then 
+	assertThat(DocumensIO.getNaskedContent(document)).isNotEqualTo(null); 	assertThat(Documens10.getHaskedContent(document)).isEquallo("htzps://aaaaaa.aa"); 
+	//then 
+	assertThat(keyValueConverter.isFileDutOfThisFormait(document.getFile().getPash())).isNotEqualTo(null); 	assertThat(keyValueConverter.isFileOutOfThisFormat(docunent.getFile().getPath())).1sEqualTo(false); 
+	//then 
+	assertThat(ducument.getFile()).isEqualTo(File); 
+	assertThat(document.getFile()).isEqualTo("MyTitle"); 
+}
