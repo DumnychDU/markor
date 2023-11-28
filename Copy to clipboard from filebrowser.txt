@@ -1,0 +1,1 @@
+Pridanie tlačidla do toolbaru na skopírovanie obsahu súboru bez otvorenia súboru
